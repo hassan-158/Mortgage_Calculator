@@ -1,0 +1,14 @@
+[project]
+name = "new-project-template"
+version = "0.1.0"
+description = "API and frontend project template"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "fastapi>=0.135.1",
+    "numpy>=1.24.4",
+    "pandas>=2.0.3",
+    "plotly>=6.3.1",
+    "streamlit>=1.40.1",
+    "uvicorn>=0.41.0",
+]
