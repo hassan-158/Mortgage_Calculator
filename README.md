@@ -13,10 +13,8 @@ This repository is a duplicate project structure for a FastAPI API and a Next.js
 ### API
 
 ```bash
-cd backend
-uv venv
-uv pip install -r requirements.txt
-uv run uvicorn api:app --reload --host 0.0.0.0 --port 8000
+uv sync
+uv run uvicorn backend.api:app --reload --host 0.0.0.0 --port 8000
 ```
 
 ### Frontend
@@ -32,11 +30,11 @@ npm run dev
 ### API (Render)
 
 - Create a new Web Service in Render
-- Connect this repo or the backend folder
+- Connect this repository and keep the project root at the repository root
 - Set the start command:
 
 ```bash
-uv run uvicorn api:app --host 0.0.0.0 --port $PORT
+uv run uvicorn backend.api:app --host 0.0.0.0 --port $PORT
 ```
 
 - Add environment variables as needed, such as `PORT`
