@@ -1,12 +1,3 @@
-import nextPlugin from '@next/eslint-plugin-next';
+import nextVitals from "eslint-config-next/core-web-vitals";
 
-export default [
-  {
-    files: ['**/*.{js,jsx,ts,tsx}'],
-    plugins: { '@next/next': nextPlugin },
-    rules: {
-      ...nextPlugin.configs.recommended.rules,
-      ...nextPlugin.configs['core-web-vitals'].rules,
-    },
-  },
-];
+export default [...nextVitals];
