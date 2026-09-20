@@ -1,8 +1,8 @@
 import "../styles/globals.css";
 
 export const metadata = {
-  title: "Project Template",
-  description: "FastAPI + Next.js app template",
+  title: "Investment Calculator",
+  description: "Compare a property investment with KiwiSaver or a managed fund.",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

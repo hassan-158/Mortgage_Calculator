@@ -6,9 +6,9 @@
   --teal: #2c6670;
   --teal-deep: #1e4c55;
   --lime: #c9e86b;
-  --paper: #eef1ec;
+  --paper: #f1f2ef;
   --white: #fbfcf8;
-  --line: #d6dfd8;
+  --line: #d9dcda;
   --ember: #e27d62;
 }
 
@@ -41,7 +41,7 @@ button { -webkit-tap-highlight-color: transparent; }
 .field, .frequency-field { display: flex; min-width: 0; flex-direction: column; gap: 8px; }
 .field-label { color: var(--ink); font-size: 0.83rem; font-weight: 700; }
 .field-hint { color: var(--ink-soft); font-size: 0.71rem; line-height: 1.35; }
-.input-shell { position: relative; display: flex; align-items: center; min-height: 46px; border-bottom: 1px solid #aebdb6; transition: border-color 150ms ease, background 150ms ease; }
+.input-shell { position: relative; display: flex; align-items: center; min-height: 46px; border-bottom: 1px solid #b5bab8; transition: border-color 150ms ease, background 150ms ease; }
 .input-shell:focus-within { border-color: var(--teal); background: rgba(255, 255, 255, 0.42); }
 .input-shell input { width: 100%; min-width: 0; padding: 8px 0; border: 0; outline: 0; background: transparent; color: var(--ink); font-size: 1.05rem; font-weight: 600; }
 .input-shell input::-webkit-outer-spin-button, .input-shell input::-webkit-inner-spin-button { margin: 0; -webkit-appearance: none; }
@@ -50,15 +50,15 @@ button { -webkit-tap-highlight-color: transparent; }
 .has-prefix input { padding-left: 7px; }
 .has-suffix input { padding-right: 7px; }
 .input-suffix { white-space: nowrap; }
-.segmented-control { display: grid; grid-template-columns: repeat(3, 1fr); gap: 3px; padding: 3px; border: 1px solid var(--line); border-radius: 7px; background: #e4eae4; }
+.segmented-control { display: grid; grid-template-columns: repeat(3, 1fr); gap: 3px; padding: 3px; border: 1px solid var(--line); border-radius: 7px; background: #e7e8e6; }
 .segmented-control button { min-width: 0; padding: 9px 7px; border: 0; border-radius: 5px; background: transparent; color: var(--ink-soft); cursor: pointer; font-size: 0.75rem; font-weight: 700; text-transform: capitalize; }
 .segmented-control button.active { background: var(--white); color: var(--teal-deep); box-shadow: 0 1px 3px rgba(18, 32, 43, 0.1); }
 .segmented-control button:focus-visible, .primary-button:focus-visible, .reset-button:focus-visible, .toggle-field:focus-visible { outline: 3px solid rgba(201, 232, 107, 0.85); outline-offset: 3px; }
 .subsection-label { margin: 35px 0 19px; color: var(--ink-soft); font-size: 0.72rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; }
 
-.toggle-field { display: flex; min-height: 69px; align-items: center; justify-content: space-between; gap: 12px; padding: 8px 0; border: 0; border-bottom: 1px solid #aebdb6; background: transparent; color: var(--ink); cursor: pointer; text-align: left; }
+.toggle-field { display: flex; min-height: 69px; align-items: center; justify-content: space-between; gap: 12px; padding: 8px 0; border: 0; border-bottom: 1px solid #b5bab8; background: transparent; color: var(--ink); cursor: pointer; text-align: left; }
 .toggle-copy { display: flex; flex-direction: column; gap: 8px; }
-.toggle-control { display: grid; width: 27px; height: 27px; place-items: center; border: 1px solid #9aac9f; border-radius: 50%; color: var(--ink); }
+.toggle-control { display: grid; width: 27px; height: 27px; place-items: center; border: 1px solid #aeb2b0; border-radius: 50%; color: var(--ink); }
 .toggle-field.selected .toggle-control { border-color: var(--teal); background: var(--lime); }
 .action-row { display: flex; align-items: center; justify-content: space-between; gap: 28px; padding: 29px 0 0; }
 .action-row p { max-width: 280px; margin: 0; color: var(--ink-soft); font-size: 0.75rem; }
@@ -74,6 +74,7 @@ button { -webkit-tap-highlight-color: transparent; }
 .results-heading p { text-align: right; }
 .comparison-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
 .outcome-panel { min-height: 226px; padding: 24px; }
+.outcome-top { display: flex; align-items: center; justify-content: space-between; }
 .property-outcome { background: var(--teal); color: var(--white); }
 .kiwi-outcome { background: var(--lime); color: var(--ink); }
 .outcome-kicker { color: inherit; opacity: 0.7; }
